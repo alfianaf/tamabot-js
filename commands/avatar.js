@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'avatar',
-    cooldown: 5,
+    cooldown: 8,
     execute(message) {
         if (!message.mentions.users.size) {
             const aaa = new Discord.MessageEmbed()
