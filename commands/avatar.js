@@ -19,6 +19,6 @@ module.exports = {
             .setTitle(`${taggedUser.username}'s Avatar`)
             .setImage(`${avatarList[0]}`)
         
-        message.channel.send(exampleEmbed);
+        channel.send(exampleEmbed);
 	},
 };
