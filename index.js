@@ -77,7 +77,7 @@ client.on('message', message => {
         } else if (amount < 2 || amount > 100) {
             return message.reply('you need to input a number between 2 and 100.');
         }
-        
+        message.channel.bulkDelete(amount);
     }
 
 });
