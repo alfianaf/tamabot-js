@@ -4,14 +4,14 @@ module.exports = {
     cooldown: 5,
     execute(message) {
         if (!message.mentions.users.size) {
-
-            return message.channel.send(`Your avatar: <${message.author.displayAvatarURL({ format: "png", dynamic: true })}>`);
+            const aaa = new Discord.MessageEmbed()
+            .setColor('#0099ff')
+            .setTitle(`${message.author.username}'s Avatar`)
+            .setImage(`${message.author.displayAvatarURL({ format: "png", dynamic: true })}`);
+            return aaa;
             // const user = message.author.displayAvatarURL({ format: "png", dynamic: true });
 
-            // const aaa = new Discord.MessageEmbed()
-            //     .setColor('#0099ff')
-            //     .setTitle(`${message.author.username}'s Avatar`)
-            //     .setImage(`${message.author.displayAvatarURL({ format: "png", dynamic: true })}`);
+           
 
             // message.channel.send(message.mentions.users.size);
         }
