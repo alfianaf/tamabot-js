@@ -57,7 +57,7 @@ client.on('message', message => {
             return message.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`);   
         }
     }
-    prune.execute('prune','1');
+    // prune.execute('prune','1');
     timestamps.set(message.author.id, now);
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
     try {
