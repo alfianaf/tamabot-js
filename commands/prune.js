@@ -13,6 +13,6 @@ module.exports = {
 			console.error(err);
 			message.channel.send('there was an error trying to prune messages in this channel!');
 		});
-    }
+    
 	},
 };
