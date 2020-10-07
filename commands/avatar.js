@@ -13,7 +13,7 @@ module.exports = {
                 .setTitle(`${message.author.username}'s Avatar`)
                 .setImage(`${message.author.displayAvatarURL({ format: "png", dynamic: true })}`)
 
-            message.channel.send(user);
+            message.channel.send(message.mentions.users.size);
         }
         // const user = message.mentions.users.displayAvatarURL({ format: "png", dynamic: true });
         const avatarList = message.mentions.users.map(user => {
