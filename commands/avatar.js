@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'avatar',
+    cooldown: 5,
     execute(message, args) {
 
         const taggedUser = message.mentions.users.first();
