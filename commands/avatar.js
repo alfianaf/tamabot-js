@@ -3,7 +3,7 @@ module.exports = {
     name: 'avatar',
     args: false,
     cooldown: 5,
-    execute(message, args) {
+    execute(message) {
 
         const taggedUser = message.mentions.users.first();
 
