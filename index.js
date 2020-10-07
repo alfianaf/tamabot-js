@@ -55,7 +55,7 @@ client.on('message', message => {
         if (now < expirationTime) {
             const timeLeft = (expirationTime - now) / 1000;
             return message.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`)
-            .then(delete(1000));   
+            .then(message.delete(10));   
         }
     }
     // prune.prune(prune,1)
