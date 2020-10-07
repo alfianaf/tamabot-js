@@ -1,5 +1,6 @@
 module.exports = {
-	name: 'kick',
+    name: 'kick',
+    guildOnly: true,
 	execute(message, args) {
         const taggedUser = message.mentions.users.first();
         if (!message.mentions.users.size) {
