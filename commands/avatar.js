@@ -3,10 +3,6 @@ module.exports = {
     name: 'avatar',
     cooldown: 5,
     execute(message) {
-
-        const taggedUser = message.mentions.users.first();
-
-
         if (!message.mentions.users.size) {
 
             // return message.channel.send(`Your avatar: <${message.author.displayAvatarURL({ format: "png", dynamic: true })}>`);
@@ -23,6 +19,7 @@ module.exports = {
         const avatarList = message.mentions.users.map(user => {
             return `${user.displayAvatarURL({ format: "png", dynamic: true })}`;
         });
+        const taggedUser = message.mentions.users.first();
 
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#0099ff')
