@@ -69,6 +69,16 @@ client.on('message', message => {
 
     }
 
+    else if (command === 'prune') {
+        const amount = parseInt(args[0]);
+    
+        if (isNaN(amount)) {
+            return message.reply('that doesn\'t seem to be a valid number.');
+        }
+    
+        // ...
+    }
+
 });
 
 client.login(process.env.BOT_TOKEN);
