@@ -6,12 +6,12 @@ module.exports = {
         if (!message.mentions.users.size) {
 
             // return message.channel.send(`Your avatar: <${message.author.displayAvatarURL({ format: "png", dynamic: true })}>`);
-            const user = message.author.displayAvatarURL({ format: "png", dynamic: true });
+            // const user = message.author.displayAvatarURL({ format: "png", dynamic: true });
 
             const aaa = new Discord.MessageEmbed()
                 .setColor('#0099ff')
                 .setTitle(`${message.author.username}'s Avatar`)
-                .setImage(`${user}`)
+                .setImage(`${message.author.displayAvatarURL({ format: "png", dynamic: true })}`)
 
             message.channel.send(aaa);
         }
