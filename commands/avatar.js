@@ -8,7 +8,7 @@ module.exports = {
             .setColor('#0099ff')
             .setTitle(`${message.author.username}'s Avatar`)
             .setImage(`${message.author.displayAvatarURL({ format: "png", dynamic: true })}`);
-            return aaa;
+            return message.channel.send(aaa);
             // const user = message.author.displayAvatarURL({ format: "png", dynamic: true });
 
            
