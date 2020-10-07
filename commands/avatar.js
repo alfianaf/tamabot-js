@@ -9,13 +9,8 @@ module.exports = {
             .setTitle(`${message.author.username}'s Avatar`)
             .setImage(`${message.author.displayAvatarURL({ format: "png", dynamic: true })}`);
             return message.channel.send(aaa);
-            // const user = message.author.displayAvatarURL({ format: "png", dynamic: true });
-
-           
-
-            // message.channel.send(message.mentions.users.size);
         }
-        // const user = message.mentions.users.displayAvatarURL({ format: "png", dynamic: true });
+
         const avatarList = message.mentions.users.map(user => {
             return `${user.displayAvatarURL({ format: "png", dynamic: true })}`;
         });
