@@ -56,7 +56,7 @@ client.on('message', message => {
             const timeLeft = (expirationTime - now) / 1000;
             
             // message.author.bot.delete({ timeout: 2000 });
-            return message.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`).then(msg=>{msg.delete({timeout:2000})});
+            return message.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`).then(msg=>{msg.delete({timeout:3000})});
         }
     }
     
