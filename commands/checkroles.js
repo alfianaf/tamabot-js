@@ -4,7 +4,7 @@ module.exports = {
     description: 'Show your discord avatar',
     cooldown: 8,
     execute(message) {
-        if (!message.author.roles.cache.some(role => role.name === 'Tama')) {
+        if (message.author.roles.cache.some(role => role.name === 'Tama')) {
             return message.channel.send(`${member} has ${role.name}`);
         }
 
