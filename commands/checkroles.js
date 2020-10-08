@@ -7,6 +7,6 @@ module.exports = {
             return message.channel.send(`${member} has role Tama`);
         }
         message.channel.send(`e`);
-
+ 
     },
 };
