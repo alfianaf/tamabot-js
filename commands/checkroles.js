@@ -1,7 +1,6 @@
-
 module.exports = {
-    name: 'avatar',
-    description: 'Show your discord avatar',
+    name: 'checkroles',
+    description: 'Check roles',
     cooldown: 8,
     execute(message) {
         if (message.author.roles.cache.some(role => role.name === 'Tama')) {
