@@ -5,18 +5,18 @@ const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
-//voice channel
-const { OpusEncoder } = require('@discordjs/opus');
+// //voice channel
+// const { OpusEncoder } = require('@discordjs/opus');
 
-// Create the encoder.
-// Specify 48kHz sampling rate and 2 channel size.
-const encoder = new OpusEncoder(48000, 2);
+// // Create the encoder.
+// // Specify 48kHz sampling rate and 2 channel size.
+// const encoder = new OpusEncoder(48000, 2);
 
-// Encode and decode.
-const encoded = encoder.encode(buffer);
-const decoded = encoder.decode(encoded);
+// // Encode and decode.
+// const encoded = encoder.encode(buffer);
+// const decoded = encoder.decode(encoded);
 
-var pathToFfmpeg = require('ffmpeg-static');
+// var pathToFfmpeg = require('ffmpeg-static');
 
 
 for (const file of commandFiles) {
