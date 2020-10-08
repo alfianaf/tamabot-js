@@ -10,7 +10,7 @@ module.exports = {
                 message.reply('a');
             }
         }
-
+        message.channel.send(`e`);
 
     },
 };
