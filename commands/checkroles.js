@@ -2,8 +2,8 @@ module.exports = {
     name: 'checkroles',
     description: 'Check user roles',
     execute(message) {
-        if (member.roles.cache.some(role => role.name === 'Tama')) {
-            message.channel.send(`${member} has ${role.name}`);
+        if (message.guild.me.permissions.some(role => role.name === 'Tama')) {
+            return message.channel.send(`${member} has ${role.name}`);
         }
 
         // if (member.hasPermission('KICK_MEMBERS', { checkAdmin: false, checkOwner: false })) {
