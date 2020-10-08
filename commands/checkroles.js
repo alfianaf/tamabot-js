@@ -1,5 +1,4 @@
 module.exports = {
-    args: true,
     name: 'checkroles',
     description: 'Check user roles',
     execute(message) {
