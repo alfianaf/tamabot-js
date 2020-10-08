@@ -1,5 +1,7 @@
 module.exports = {
     name: 'kick',
+    description: 'Kick tagged user from this server',
+
     guildOnly: true,
 	execute(message, args) {
         const taggedUser = message.mentions.users.first();

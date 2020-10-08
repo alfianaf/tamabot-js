@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'avatar',
+    description: 'Show your discord avatar',
     cooldown: 8,
     execute(message) {
         if (!message.mentions.users.size) {
