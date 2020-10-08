@@ -2,7 +2,7 @@ module.exports = {
     args: true,
     name: 'checkroles',
     description: 'Check user roles',
-    execute(message, args) {
+    execute(message) {
         if (member.roles.cache.some(role => role.name === 'Tama')) {
             message.channel.send(`${member} has ${role.name}`);
         }
