@@ -5,10 +5,13 @@ module.exports = {
     cooldown: 8,
     execute(message) {
         if (message.author.roles.cache.some(role => role.name === 'Tama')) {
-            return message.channel.send(`${member} has ${role.name}`);
+            try{ message.channel.send(`${member} has ${role.name}`);}
+            catch (error) {
+                console.error(error);
+                message.reply('a');
+            }
         }
 
-        message.channel.send('You don\'t have a role called Mod.');
 
     },
 };
