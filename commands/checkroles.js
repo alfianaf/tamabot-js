@@ -3,7 +3,7 @@ module.exports = {
     description: 'Check roles',
     cooldown: 8,
     execute(message) {
-        if (message.author.roles(role => role.name === 'Tama')) {
+        if (message.member.roles.cache.some(role => role.name === 'Tama')) {
             try{ message.channel.send(`${member} has ${role.name}`);}
             catch (error) {
                 console.error(error);
