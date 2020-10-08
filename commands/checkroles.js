@@ -4,7 +4,7 @@ module.exports = {
     cooldown: 8,
     execute(message) {
         if (message.member.roles.cache.some(role => role.name === 'Tama')) {
-            message.channel.send(`${message.member} has ${role.name}`);
+            message.channel.send(`${message.member} has role Tama`);
         }
         message.channel.send(`e`);
 
