@@ -2,7 +2,7 @@ module.exports = {
     name: 'play',
     description: 'Check roles',
     cooldown: 8,
-    execute(dispatcher) {
+    execute(message) {
 
         // Create a dispatcher
         const dispatcher = connection.play('https://cdn.discordapp.com/attachments/762528512225574913/763723274164895744/SweetSummerRainbowNostalgic_Treasure.mp3');
