@@ -124,7 +124,7 @@ client.once("reconnecting", () => {
 client.once("disconnect", () => {
   console.log("Disconnect!");
 });
-
+ 
 client.on("message", async message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
